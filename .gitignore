@@ -1,0 +1,12 @@
+# 排除所有 Excel 文件
+*.xlsx
+*.xls
+*.et
+*.txt
+
+
+# 排除指定文件夹
+keyPersonnel/
+output/
+data/
+venv/
