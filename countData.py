@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-递归读取 data 文件夹下所有 c，
+递归读取 data 文件夹下所有表格文件（包含.xlsx .xls .et），
 统计每个 sheet 的行数（包含表头），并记录文件数、sheet 数和总行数，输出到 log.txt。
 依赖：openpyxl, xlrd
 安装：pip install openpyxl xlrd
@@ -59,7 +59,7 @@ def process_file(filepath: str) -> dict:
         raise ValueError(f"不支持的文件类型: {ext}")
 
 def main():
-    data_dir = Path('keyPersonnel/大于等于50行小于等于100行')
+    data_dir = Path('data')
     if not data_dir.exists():
         sys.exit(f"错误：文件夹 '{data_dir}' 不存在")
 
