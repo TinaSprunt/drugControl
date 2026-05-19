@@ -91,7 +91,7 @@ def main():
     # 写入结果 Excel
     df_out = pd.DataFrame(results)
     df_out.to_excel(OUTPUT_FILE, index=False)
-    print(f"\n完成！成功 {total_files - errors} 个文件，失败 {errors} 个，结果保存至 {OUTPUT_FILE}")
+    print(f"\n完成!成功 {total_files - errors} 个文件，失败 {errors} 个，结果保存至 {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

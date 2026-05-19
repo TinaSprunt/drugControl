@@ -232,7 +232,7 @@ if temp_dir.exists():
 
 # ---------- 6. 汇总报告 ----------
 print("\n" + "="*60)
-print(f"✅ 任务完成！共为 {output_count} 个身份证号生成了结果文件。")
+print(f"✅ 任务完成!共为 {output_count} 个身份证号生成了结果文件。")
 print(f"📄 日志文件: {LOG_FILE}")
 if failed_files:
     print(f"⚠️ 有 {len(failed_files)} 个文件读取失败：")

@@ -108,7 +108,7 @@ def main():
     with open('log.txt', 'w', encoding='utf-8') as f:
         f.write(log_content)
 
-    print(f"\n统计完成！共找到 {total_files} 个表格文件，"
+    print(f"\n统计完成!共找到 {total_files} 个表格文件，"
           f"读取 {total_sheets} 个 sheet，总计 {total_rows} 行。详情见 log.txt")
 
 if __name__ == '__main__':

@@ -100,5 +100,5 @@ with open(LOG_FILE, 'w', encoding='utf-8') as log:
         except Exception as e:
             print(f"  保存失败: {save_path} - {e}")
 
-print(f"全部完成！共生成 {output_count} 个结果文件。")
+print(f"全部完成!共生成 {output_count} 个结果文件。")
 print(f"日志文件保存在: {LOG_FILE}")

@@ -204,7 +204,7 @@ def read_excel_cells(filepath):
 def main():
     data_dir = 'data'
     if not os.path.isdir(data_dir):
-        print(f"致命错误：文件夹 '{data_dir}' 不存在！")
+        print(f"致命错误：文件夹 '{data_dir}' 不存在!")
         input("按回车键退出...")
         return
 
