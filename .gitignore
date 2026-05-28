@@ -3,11 +3,133 @@
 *.xls
 *.et
 *.txt
+*.docx
+*.doc
+
 
 
 # 排除指定文件夹
 keyPersonnel/
 output/
 data/
+dataTest/
 venv/
 .vscode/
+__pycache__/
+8种目标药物结果数据/
+
+
+# ----------------------------------
+# 1. 字节码与编译文件
+# ----------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so                   # C 扩展
+*.pyd                  # Windows DLL
+
+# ----------------------------------
+# 2. 虚拟环境
+# ----------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# ----------------------------------
+# 3. 包与分发目录
+# ----------------------------------
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ----------------------------------
+# 4. PyInstaller 打包文件
+# ----------------------------------
+*.manifest
+*.spec
+
+# ----------------------------------
+# 5. 日志与数据库
+# ----------------------------------
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# ----------------------------------
+# 6. 单元测试与覆盖率报告
+# ----------------------------------
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ----------------------------------
+# 7. Jupyter Notebook
+# ----------------------------------
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ----------------------------------
+# 8. 环境与配置文件
+# ----------------------------------
+.env
+.env.*
+!.env.example        # 例外：保留.env.example作为模版，见下文解释[reference:0]
+*.local
+
+# ----------------------------------
+# 9. IDE及编辑器配置
+# ----------------------------------
+.vscode/            # VS Code，不过如果有需要共享的配置文件，见下文解释[reference:1]
+.idea/              # PyCharm等JetBrains系
+*.swp
+*.swo
+*~
+.DS_Store           # macOS
+Thumbs.db           # Windows
+
+# ----------------------------------
+# 10. 各类工具及缓存
+# ----------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.python-version
+celerybeat-schedule
+celerybeat.pid
+*.sage.py
+.scrapy
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
